@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        p {
+            font-size: 18px;
+        }
+        .heart-btn {
+            background: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .heart-btn:hover {
+            background: #e63939;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm Sorry ❤️</h1>
+        <p>Hey My love, I know I hurt you, and for that, I am truly sorry. The last thing I ever wanted was to cause you pain because you are the most important person in my life. I regret my mistakes deeply, and I promise I’ve learned from them.
+
+            Please give me one more chance to prove how much I love and cherish you. I don’t just want to say sorry—I want to show you, every single day, that you are my happiness, my peace, and my heart.
+            
+            I promise to be more understanding, to listen to you, and to make you smile even on your worst days. I want to grow with you, love you better, and never take you for granted again.
+            
+            No matter what, I will be here, waiting, hoping, and doing everything I can to make things right. Please forgive me, my love. You mean the world to me.❤️💕</p>
+       
+
+    <button class="heart-btn" onclick="sendSMS()">Forgive Me?</button>
+
+<script>
+    function sendSMS() {
+        let phoneNumber = "918688861509"; // Replace with your actual number
+        let message = "Hey love, I forgive you ❤️"; 
+        
+        window.location.href = `sms:${phoneNumber}&body=${encodeURIComponent(message)}`;
+    }
+</script>
+
+</body>
+</html>
